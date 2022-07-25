@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-11T19:24:07.942Z",
+    "end": "2022-03-11T19:24:24.647Z",
+    "duration": 16705,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "12954d05-3afa-42ee-9295-408fadb0476a",
+      "title": "",
+      "fullFile": "cypress/integration/01-test_coverage_spec.js",
+      "file": "cypress/integration/01-test_coverage_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c95bdb7d-a8bb-48e9-b65f-9c50043d48de",
+          "title": "1 - Desenvolva os testes unitários de maneira que a cobertura seja de, no mínimo, 90%",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verifica a cobertura de testes unitários",
+              "fullTitle": "1 - Desenvolva os testes unitários de maneira que a cobertura seja de, no mínimo, 90% Verifica a cobertura de testes unitários",
+              "timedOut": null,
+              "duration": 16648,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.exec('npm run test-coverage -- --coverageReporters=\"json-summary\" --testFailureExitCode=0');\ncy.readFile('coverage/coverage-summary.json').its('total.lines.pct').should('be.gte', 90.00);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected 31.76 to be at least 90",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected 31.76 to be at least 90\n    at Context.eval (http://localhost:34253/__cypress/tests?p=cypress/integration/01-test_coverage_spec.js:102:74)",
+                "diff": "- 31.76\n+ 90\n"
+              },
+              "uuid": "8ac76c14-3237-4cc0-8b9d-fd041b6a91e1",
+              "parentUUID": "c95bdb7d-a8bb-48e9-b65f-9c50043d48de",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "8ac76c14-3237-4cc0-8b9d-fd041b6a91e1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16648,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

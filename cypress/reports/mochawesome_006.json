@@ -1,0 +1,604 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 20,
+    "passes": 1,
+    "pending": 0,
+    "failures": 19,
+    "start": "2022-03-08T21:45:11.238Z",
+    "end": "2022-03-08T21:46:15.705Z",
+    "duration": 64467,
+    "testsRegistered": 20,
+    "passPercent": 5,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d0edcb2-313e-4f42-88fa-6c585649eb15",
+      "title": "",
+      "fullFile": "cypress/integration/09-header_spec.js",
+      "file": "cypress/integration/09-header_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "87cf24b7-2ba2-47bf-b2ef-6880d7358f0e",
+          "title": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "fullTitle": "9 - Implemente os elementos do header na tela principal de receitas, respeitando os atributos descritos no protótipo Tem os data-testids profile-top-btn, page-title e search-top-btn",
+              "timedOut": null,
+              "duration": 10378,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"profile-top-btn\"]');\ncy.get('[data-testid=\"page-title\"]');\ncy.get('[data-testid=\"search-top-btn\"]');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:103:8)",
+                "diff": null
+              },
+              "uuid": "dd7b1099-f4f6-4e36-8395-5062d82709c5",
+              "parentUUID": "87cf24b7-2ba2-47bf-b2ef-6880d7358f0e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dd7b1099-f4f6-4e36-8395-5062d82709c5"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10378,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "df576cd5-6a11-4ddb-8131-0b625926d463",
+          "title": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Não tem header na tela de login",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de login",
+              "timedOut": null,
+              "duration": 200,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/');\nhasNoHeader();",
+              "err": {},
+              "uuid": "b6c4e33f-1643-491c-b4b3-7d6feccd7790",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de comidas",
+              "timedOut": null,
+              "duration": 10115,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\nhasHeader('Foods');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.\n    at hasHeader (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:116:47)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:132:5)",
+                "diff": null
+              },
+              "uuid": "6b885607-778f-4c5f-948b-3a0a8a9e4304",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de principal de receitas de bebidas",
+              "timedOut": null,
+              "duration": 174,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/drinks');\nhasHeader('Drinks');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "37b9f53c-c5f5-4335-996f-01cd98ef626c",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de comida",
+              "timedOut": null,
+              "duration": 147,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods/52771');\nhasNoHeader();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "b87c43ca-41dd-4414-ac30-3cb2943bc239",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de detalhes de uma receita de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de detalhes de uma receita de bebida",
+              "timedOut": null,
+              "duration": 121,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/drinks/178319');\nhasNoHeader();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "5d05a98d-59f6-4c17-95f5-62471ad28231",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em progresso de comida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em progresso de comida",
+              "timedOut": null,
+              "duration": 151,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods/52771/in-progress');\nhasNoHeader();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "4c2b051f-ecc3-4a9b-9717-2ce2b8ab773c",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Não tem header na tela de receita em progresso de bebida",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo Não tem header na tela de receita em progresso de bebida",
+              "timedOut": null,
+              "duration": 156,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/drinks/178319/in-progress');\nhasNoHeader();",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "2adb98e2-066b-4c83-9cad-90881e877f1e",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar",
+              "timedOut": null,
+              "duration": 147,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore');\nhasHeader('Explore', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "d50d811f-c5c4-43b0-a6ba-76291d10c894",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas",
+              "timedOut": null,
+              "duration": 153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore/foods');\nhasHeader('Explore Foods', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "95d7d882-db28-448e-9fdd-1b79d97b6ad4",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas",
+              "timedOut": null,
+              "duration": 156,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore/drinks');\nhasHeader('Explore Drinks', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "5d200dd3-91e8-4e33-afc1-b712d6a06380",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por ingrediente",
+              "timedOut": null,
+              "duration": 173,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore/foods/ingredients');\nhasHeader('Explore Ingredients', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "58acf5ab-d373-4c12-86e4-509190911a8f",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar bebidas por ingrediente",
+              "timedOut": null,
+              "duration": 152,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore/drinks/ingredients');\nhasHeader('Explore Ingredients', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "fbc01a9c-19a0-4e9b-9744-edfe89643219",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de explorar comidas por nacionalidade",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de explorar comidas por nacionalidade",
+              "timedOut": null,
+              "duration": 138,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/explore/foods/nationalities');\nhasHeader('Explore Nationalities');",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "b4d4f90a-42c9-46fb-818b-e9d41e9434a1",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de perfil",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de perfil",
+              "timedOut": null,
+              "duration": 144,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/profile');\nhasHeader('Profile', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "76f58dcb-c2bb-494c-adec-923939a10285",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas feitas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas feitas",
+              "timedOut": null,
+              "duration": 10116,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/done-recipes');\nhasHeader('Done Recipes', false);",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"profile-top-btn\"]`, but never found it.\n    at hasHeader (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:116:47)\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:184:5)",
+                "diff": null
+              },
+              "uuid": "9fa83f29-1916-456d-9116-e6e97980baa6",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O header tem os ícones corretos na tela de receitas favoritas",
+              "fullTitle": "10 - Implemente um ícone para a tela de perfil, um título e um ícone para a busca, caso exista no protótipo O header tem os ícones corretos na tela de receitas favoritas",
+              "timedOut": null,
+              "duration": 129,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/favorite-recipes');\nhasHeader('Favorite Recipes', false);",
+              "err": {
+                "message": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "Error: The following error originated from your application code, not from Cypress.\n\n  > Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: object. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.\n\nCheck the render method of `Context.Consumer`.\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at createFiberFromTypeAndProps (http://localhost:3000/static/js/bundle.js:36756:25)\n    at createFiberFromElement (http://localhost:3000/static/js/bundle.js:36778:19)\n    at reconcileSingleElement (http://localhost:3000/static/js/bundle.js:27193:27)\n    at reconcileChildFibers (http://localhost:3000/static/js/bundle.js:27253:39)\n    at reconcileChildren (http://localhost:3000/static/js/bundle.js:29682:32)\n    at updateContextProvider (http://localhost:3000/static/js/bundle.js:31124:7)\n    at beginWork (http://localhost:3000/static/js/bundle.js:31514:18)\n    at HTMLUnknownElement.callCallback (http://localhost:3000/static/js/bundle.js:13155:18)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/static/js/bundle.js:13204:20)\n    at invokeGuardedCallback (http://localhost:3000/static/js/bundle.js:13257:35)",
+                "diff": null
+              },
+              "uuid": "d39d25e8-9898-4430-b6a1-cf5cd3954b52",
+              "parentUUID": "df576cd5-6a11-4ddb-8131-0b625926d463",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b6c4e33f-1643-491c-b4b3-7d6feccd7790"
+          ],
+          "failures": [
+            "6b885607-778f-4c5f-948b-3a0a8a9e4304",
+            "37b9f53c-c5f5-4335-996f-01cd98ef626c",
+            "b87c43ca-41dd-4414-ac30-3cb2943bc239",
+            "5d05a98d-59f6-4c17-95f5-62471ad28231",
+            "4c2b051f-ecc3-4a9b-9717-2ce2b8ab773c",
+            "2adb98e2-066b-4c83-9cad-90881e877f1e",
+            "d50d811f-c5c4-43b0-a6ba-76291d10c894",
+            "95d7d882-db28-448e-9fdd-1b79d97b6ad4",
+            "5d200dd3-91e8-4e33-afc1-b712d6a06380",
+            "58acf5ab-d373-4c12-86e4-509190911a8f",
+            "fbc01a9c-19a0-4e9b-9744-edfe89643219",
+            "b4d4f90a-42c9-46fb-818b-e9d41e9434a1",
+            "76f58dcb-c2bb-494c-adec-923939a10285",
+            "9fa83f29-1916-456d-9116-e6e97980baa6",
+            "d39d25e8-9898-4430-b6a1-cf5cd3954b52"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 22372,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "f23e0387-5115-45fd-82e7-bb91c6e2f13d",
+          "title": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "A mudança de tela ocorre corretamente",
+              "fullTitle": "11 - Redirecione a pessoa usuária para a tela de perfil ao clicar no botão de perfil A mudança de tela ocorre corretamente",
+              "timedOut": null,
+              "duration": 10145,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"page-title\"]').contains('Foods');\ncy.get('[data-testid=\"profile-top-btn\"]').click();\ncy.get('[data-testid=\"page-title\"]').contains('Profile');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"page-title\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"page-title\"]`, but never found it.\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:194:8)",
+                "diff": null
+              },
+              "uuid": "afdb1e6f-f42d-4874-8944-fd3167c92e8f",
+              "parentUUID": "f23e0387-5115-45fd-82e7-bb91c6e2f13d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "afdb1e6f-f42d-4874-8944-fd3167c92e8f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10145,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "604425f4-09a2-4755-a78a-e3372be77147",
+          "title": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela primeira vez a barra de busca aparece",
+              "timedOut": null,
+              "duration": 10142,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"search-input\"]').should('not.exist');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"search-top-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"search-top-btn\"]`, but never found it.\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:203:8)",
+                "diff": null
+              },
+              "uuid": "00550ae2-b685-4c14-b24c-172c3d74ceed",
+              "parentUUID": "604425f4-09a2-4755-a78a-e3372be77147",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "fullTitle": "12 - Desenvolva o botão de busca que, ao ser clicado, a barra de busca deve aparecer. O mesmo serve para escondê-la Ao clicar no botão de busca pela segunda vez a barra de busca desaparece",
+              "timedOut": null,
+              "duration": 10171,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/foods');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]');\ncy.get('[data-testid=\"search-top-btn\"]').click();\ncy.get('[data-testid=\"search-input\"]').should('not.exist');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"search-top-btn\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 10000ms: Expected to find element: `[data-testid=\"search-top-btn\"]`, but never found it.\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/integration/09-header_spec.js:208:8)",
+                "diff": null
+              },
+              "uuid": "294e7ee2-00de-4479-80ed-bdbb17c086dc",
+              "parentUUID": "604425f4-09a2-4755-a78a-e3372be77147",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "00550ae2-b685-4c14-b24c-172c3d74ceed",
+            "294e7ee2-00de-4479-80ed-bdbb17c086dc"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20313,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
