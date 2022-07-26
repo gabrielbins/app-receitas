@@ -1,3 +1,40 @@
+### Introdução
+O projeto consiste em uma aplicação de **RECEITAS**, foi desenvolvido com o objetivo de aplicar e avaliar os conhecimentos obtidos atraves do curso de desenvolvedor web Full Stack oferecido pela Trybe.
+
+Projeto desenvolvido em squad com a colaboração:
+
+@marinafischer
+@VitorCorrea18
+@Denilson-Santuchi
+@alinemsiqueira
+
+### Tecnologias e Habilidades aplicadas 
+
+- Fazer requisições a APIs;
+- JavaScript;
+- React-Redux
+- Hooks
+- CSS e HTML;
+- Git
+- Trabalhar em Equipe
+
+
+<details>
+<summary><strong>Como rodar a aplicação</strong></summary><br />
+ 
+* No terminal clone o repositorio atraves do comando:
+ 
+    * `git clone git@github.com:gabrielbins/app-receitas.git`
+ * Instale as dependências:
+    * `npm install`
+ 
+* Rode a aplicação atraves do comando na **Raiz do Projeto**
+    * * `npm start`
+</details>
+
+
+
+
 <details>
 <summary><strong>Avaliação do curso</strong></summary><br />
 ### Termos de uso
