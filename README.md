@@ -3,10 +3,10 @@ O projeto consiste em uma aplicação de **RECEITAS**, foi desenvolvido com o ob
 
 Projeto desenvolvido em squad com a colaboração:
 
--[marinafischer](https://github.com/marinafischer)
--[VitorCorrea18](https://github.com/VitorCorrea18)
--[Denilson-Santuchi](https://github.com/Denilson-Santuchi)
--[alinemsiqueira](https://github.com/alinemsiqueira)
+-[marinafischer](https://github.com/marinafischer)  
+-[VitorCorrea18](https://github.com/VitorCorrea18)  
+-[Denilson-Santuchi](https://github.com/Denilson-Santuchi)  
+-[alinemsiqueira](https://github.com/alinemsiqueira)  
 
 ### Tecnologias e Habilidades aplicadas 
 
